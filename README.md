@@ -1,4 +1,6 @@
 # deep-text-recognition-benchmark_JUHYE
+<br>
+
 ## 기존 코드에서 수정한 부분
 - <create_lmdb_dataset.py line 46> for i in range(nSamples) → for i in range(1, nSamples)
  
