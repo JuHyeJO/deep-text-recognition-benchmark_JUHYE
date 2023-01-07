@@ -1,5 +1,6 @@
-#deep-text-recognition-benchmark_JUHYE
-|## 기존 코드에서 수정한 부분
+# deep-text-recognition-benchmark_JUHYE
+|
+## 기존 코드에서 수정한 부분
 |- <create_lmdb_dataset.py line 46> for i in range(nSamples) → for i in range(1, nSamples)
 - <create_lmdb_dataset.py line 47> datalist[i].strip('\n').split('\t') → datalist[i].strip('\n').split(',')
 - <train line 259> 259번째줄character에서 default='0123456789abcdefghijklmnopqrstuvwxyz'를 학습할 문자들로 고치기
