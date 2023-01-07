@@ -30,7 +30,7 @@ def demo(opt):
 
     # load model
     print('loading pretrained model from %s' % opt.saved_model)
-    if isinstance(model, nn.DataParallel):
+    if isinstance(model, torch.nn.DataParallel):
         model.load_state_dict(torch.load(opt.saved_model, map_location=device))
     else:
         state_dict=torch.load(model_parms.model_dir)
