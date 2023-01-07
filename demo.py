@@ -70,9 +70,9 @@ def demo(opt):
 
             log = open(f'./log_demo_result.txt', 'a')
             dashed_line = '-' * 80
-            head = f'{"image_path":25s}\t{"predicted_labels":25s}\tconfidence score'
+            # head = f'{"image_path":25s}\t{"predicted_labels":25s}\tconfidence score'
             
-            print(f'{dashed_line}\n{head}\n{dashed_line}')
+            # print(f'{dashed_line}\n{head}\n{dashed_line}')
             log.write(f'{dashed_line}\n{head}\n{dashed_line}\n')
 
             preds_prob = F.softmax(preds, dim=2)
